@@ -11,7 +11,10 @@ export default function Home() {
 
   return (
     rooms.map((item)=>{
-      return <li key={item.room_type}>{item.room_type},{item.vacant_rooms},{item.price}</li>
+      return <div style={{margin:20}}> 
+         <li key={item.room_type}>{item.room_type},{item.vacant_rooms},{item.price}</li>
+      </div>
+     
     })
     
   )
